@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            background: #ccc;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        .single_item {
+            background: #ffff;
+        }
+
+        .item_header {
+            cursor: pointer;
+        }
+
+        .content {
+            background: #ba5a5a;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .3s ease-in-out;
+        }
+
+        .single_item.is-open .content {
+            max-height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="single_item">
+                <h2 class="item_header">Item-1</h2>
+                <div class="content">
+                    <p>Item 1</p>
+                </div>
+            </div>
+
+            <div class="single_item">
+                <h2 class="item_header">Item-2</h2>
+                <div class="content">
+                    <p>Item 2</p>
+                </div>
+            </div>
+
+            <div class="single_item">
+                <h2 class="item_header">Item-3</h2>
+                <div class="content">
+                    <p>Item 3</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
